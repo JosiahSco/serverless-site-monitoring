@@ -12,6 +12,7 @@ Response Time: 167ms
 ## https://asteroidinc.josiahscott.dev
 Status: 🟩UP  
 Response Time: 192ms
+Response Time: 192ms
 
 ## https://weather.josiahscott.dev
 Status: 🟩UP  
