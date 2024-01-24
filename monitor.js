@@ -12,7 +12,7 @@ async function checkStatus() {
     const timestamp = new Date().toUTCString();
     const newText = text.toString().replace(/Last Status Check: .* GMT/, `Last Status Check: ${timestamp}`)
     
-    await writeFile(`readme.md`, newText);
+    await writeFile(`README.md`, newText);
 
     for (let site of sites) {
         try {
@@ -20,16 +20,17 @@ async function checkStatus() {
             const response = await fetch(site);
             const endTime = Date.now();
             const responseTime = endTime - startTime;
-
             const status = response.ok ? '🟩UP' : '🟥DOWN';
             const siteInfo = `## ${site}\nStatus: ${status}  \nResponse Time: ${responseTime}ms\n\n`;
+            console.log(siteInfo)
             let oldText = await readFile(`README.md`);
-
+            
             if (oldText.includes(`${site}`)) {
                 oldText.toString().replace(new RegExp(`## ${site}[^#]*`), siteInfo);
             } else {
                 oldText += `\n${siteInfo}`;
             }
+            await writeFile(`README.md`, oldText);
         } catch (error) {
             console.log('Error: ', error);
         }
