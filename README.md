@@ -3,8 +3,17 @@ Attempt at using github actions to do website monitoring for status and response
 
 ## https://josiahscott.dev
 Status: 🟩UP
-Response Time: 256ms
-         
+Response Time: 213ms
+
 ## https://asteroidinc.josiahscott.dev
 Status: 🟩UP
-Response Time: 278ms
+Response Time: 192ms
+
+## https://weather.josiahscott.dev
+Status: 🟩UP
+Response Time: 314ms
+
+## https://typing.josiahscott.dev
+Status: 🟩UP
+Response Time: 225ms
+
