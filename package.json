@@ -1,0 +1,11 @@
+{
+  "name": "serverless-site-monitoring",
+  "version": "1.0.0",
+  "description": "attempt at using github actions to do website monitoring for status and response time of several projects",
+  "main": "monitor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
