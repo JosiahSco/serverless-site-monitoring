@@ -22,7 +22,6 @@ async function checkStatus() {
             const responseTime = endTime - startTime;
             const status = response.ok ? '🟩UP' : '🟥DOWN';
             const siteInfo = `## ${site}\nStatus: ${status}  \nResponse Time: ${responseTime}ms\n\n`;
-            console.log(siteInfo)
             let oldText = await readFile(`README.md`);
             
             if (oldText.includes(`${site}`)) {
