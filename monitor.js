@@ -26,7 +26,7 @@ async function checkStatus() {
             let oldText = await readFile(`README.md`);
             
             if (oldText.includes(`${site}`)) {
-                oldText.toString().replace(new RegExp(`## ${site}[^#]*`), siteInfo);
+                oldText = oldText.toString().replace(new RegExp(`## ${site}[^#]*`), siteInfo);
             } else {
                 oldText += `\n${siteInfo}`;
             }
