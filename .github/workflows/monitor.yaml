@@ -26,6 +26,5 @@ jobs:
           git config --global user.email "${{ secrets.EMAIL }}"
           git config --global user.name "JosiahSco"
           git add README.md
-          git commit -m "Update README with status" || true
-          git remote add origin_with_token https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
-          git push origin_with_token HEAD:${{ github.ref }}
+          git commit -m "Update README with status"
+          git push
