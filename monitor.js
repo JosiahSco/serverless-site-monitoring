@@ -8,6 +8,12 @@ const sites = [
 ]
 
 async function checkStatus() {
+    let text = await readFile('README.md');
+    const timestamp = new Date().toUTCString();
+    const newText = text.toString().replace(/Last Status Check: .* GMT/, `Last Status Check: ${timestamp}`)
+    
+    await writeFile(`readme.md`, newText);
+
     for (let site of sites) {
         try {
             const startTime = Date.now();
@@ -20,15 +26,12 @@ async function checkStatus() {
             let oldText = await readFile(`README.md`);
 
             if (oldText.includes(`${site}`)) {
-                oldText = oldText.toString().replace(new RegExp(`## ${site}[^#]*`), siteInfo);
+                oldText.toString().replace(new RegExp(`## ${site}[^#]*`), siteInfo);
             } else {
                 oldText += `\n${siteInfo}`;
-                // oldText = oldText.toString().replace(/Status: .*/, `Status: ${status}`);
-                // oldText = oldText.toString().replace(/Response Time: .*/, `Response Time: ${responseTime}ms`);
             }
-            await writeFile(`readme.md`, oldText);            
         } catch (error) {
-            console.log('Error: ', error);            
+            console.log('Error: ', error);
         }
     }
 }
