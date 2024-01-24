@@ -9,8 +9,8 @@ const sites = [
 
 async function checkStatus() {
     let text = await readFile('README.md');
-    const timestamp = new Date().toUTCString();
-    const newText = text.toString().replace(/Last Status Check: .* GMT/, `Last Status Check: ${timestamp}`)
+    const timestamp = new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' });
+    const newText = text.toString().replace(/Last Status Check: .* CST/, `Last Status Check: ${timestamp} CST`)
     
     await writeFile(`README.md`, newText);
 
