@@ -3,8 +3,8 @@ Attempt at using github actions to do website monitoring for status and response
 
 ## https://josiahscott.dev
 Status: 🟩UP
-Response Time: 292ms
-                
+Response Time: 256ms
+         
 ## https://asteroidinc.josiahscott.dev
 Status: 🟩UP
-Response Time: 780ms
+Response Time: 278ms
