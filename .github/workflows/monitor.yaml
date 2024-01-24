@@ -23,8 +23,8 @@ jobs:
       - name: Run script and commit changes
         run: |
           node monitor.js
-          git config --global user.email "${{ secrets.EMAIL }}"
-          git config --global user.name "JosiahSco"
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
           git add .
           git commit -m "Update README with status"
           git push
