@@ -1,5 +1,5 @@
 const { readFile, writeFile } = require('fs/promises');
-
+const fetch = require('node-fetch');
 const sites = [
     'https://josiahscott.dev',
     'https://asteroidinc.josiahscott.dev',
