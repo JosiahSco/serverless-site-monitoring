@@ -16,4 +16,3 @@ Response Time: 283ms
 ## https://typing.josiahscott.dev
 Status: 🟩UP  
 Response Time: 312ms
-
