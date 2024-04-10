@@ -3,21 +3,21 @@ Attempt at using github actions to do website monitoring for status and response
 
 [![Monitor Status and Update README](https://github.com/JosiahSco/serverless-site-monitoring/actions/workflows/monitor.yaml/badge.svg)](https://github.com/JosiahSco/serverless-site-monitoring/actions/workflows/monitor.yaml)
 
-Last Status Check: 4/10/2024, 5:54:51 PM CST
+Last Status Check: 4/10/2024, 6:10:29 PM CST
 
 ## https://josiahscott.dev
 Status: 🟩UP  
-Response Time: 121ms
+Response Time: 238ms
 
 ## https://asteroidinc.josiahscott.dev
 Status: 🟩UP  
-Response Time: 110ms
+Response Time: 201ms
 
 ## https://weather.josiahscott.dev
 Status: 🟩UP  
-Response Time: 100ms
+Response Time: 210ms
 
 ## https://typing.josiahscott.dev
 Status: 🟩UP  
-Response Time: 115ms
+Response Time: 236ms
 
